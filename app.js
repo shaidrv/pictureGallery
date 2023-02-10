@@ -43,6 +43,7 @@ function activeSlideIndex() {
 
 function activateSlide(index) {
   clearActiveClasses()
-  const slide = document.querySelector('[data-index="' + index + '"]')
-  slide.classList.add('active')
+  slides[index].classList.add('active')
 }
+
+activateSlide(0)
